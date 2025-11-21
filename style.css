@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.sedans img, .suvs img, .luxury img {
+    width: 40px;
+}
+
+.sedans button, .suvs button, .luxury button {
+    width: 130px;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 70px;
+    margin-top: 70px;
+    padding: 10px 25px;
+}
+
+h2 {
+    font-family: "Big Shoulders";
+    color: hsl(0, 0%, 95%);
+    font-weight: 400;
+    font-size: 27px;
+    margin: 20px 0;
+
+}
+
+p, button {
+    font-family: "Lexend Deca";
+}
+
+button {
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 22px;
+    font-size: 14px;
+}
+
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    height: 100%;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+.sedans {
+    width: 277px;
+    background-color: hsl(31, 77%, 52%);
+    padding: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.sedans img {
+    width: 40px;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+
+
+
+
+
+
+
+
+
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 40px;
+    width: 273px;
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.luxury {
+    width: 277px;
+    background-color: hsl(179, 100%, 13%);
+    padding: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+.sedans button:hover,
+.suvs button:hover,
+.luxury button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    section {
+        padding: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .sedans {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+        padding-top: 30px;
+
+    }
+
+    .sedans button {
+        margin-top: 20px;
+    }
+
+
+
+
+
+    .suvs {
+        width: 277px;
+        padding-top: 30px;
+    }
+
+    .suvs button {
+        margin-top: 20px;
+    }
+
+
+
+
+
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
+
+    .luxury button {
+        margin-top: 20px;
+    }
+}
+
+
+
+
