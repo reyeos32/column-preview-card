@@ -1,144 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: hsl(0, 0%, 95%);
+    font-family: "Poppins", sans-serif;
 }
 
-.sedans img, .suvs img, .luxury img {
-    width: 40px;
-}
 
-.sedans button, .suvs button, .luxury button {
-    width: 130px;
-    background-color: hsl(0, 0%, 95%);
-    border: 2px solid hsl(0, 0%, 95%);
-    border-radius: 70px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: center;
     margin-top: 70px;
-    padding: 10px 25px;
 }
 
-h2 {
-    font-family: "Big Shoulders";
-    color: hsl(0, 0%, 95%);
-    font-weight: 400;
-    font-size: 27px;
-    margin: 20px 0;
 
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-p, button {
-    font-family: "Lexend Deca";
+header h2 {
+    color: hsl(212, 6%, 44%);
+    font-weight: 200;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
-button {
-    cursor: pointer;
-    transition: 0.1s;
+header h1 {
+    color: hsl(234, 12%, 34%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
 }
 
-p {
-    color: hsla(0, 0%, 100%, 0.75);
-    line-height: 22px;
-    font-size: 14px;
+header p {
+    width: 60%;
+    margin-top: 10px;
+    font-size: 0.6rem;
+    font-weight: 500;
+    text-align: center;
+    color: hsl(212, 6%, 44%);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 section {
+    margin-top: 80px;
+}
+
+section .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 
 
 
-
-
-
-.container {
+.box {
     display: flex;
-    height: 100%;
-    max-width: 100%;
+    flex-direction: column;
+    box-shadow: 0px 7px 27px -20px black;
+    padding: 20px;
+    /* padding-right: 0; */
+    /* position: relative; */
+    max-width: 320px;
+    border-radius: 5px;
+}
+
+.section-h {
+    color: hsl(234, 12%, 34%);
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.section-p {
+    font-size: 14px;
+    color: hsl(212, 6%, 44%);
+    margin-top: 5px;
+    padding-right: 20px;
+}
+
+.section-img {
+    /* position: absolute; */
+    margin-top: 25px;
+    /* margin-left: 160px; */
+    /* right: 25px; */
+    /* bottom: 25px; */
+    width: 50px;
+    align-self: flex-end;
 }
 
 
 
-
-
-
-
-.sedans {
-    width: 277px;
-    background-color: hsl(31, 77%, 52%);
-    padding: 40px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+.supervisor { 
+    border-top: 2px solid hsl(180, 62%, 55%);
+    /* height: 200px; */
+    margin-right: 20px;
 }
 
-.sedans img {
-    width: 40px;
+.middle {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
-.sedans button {
-    color: hsl(31, 77%, 52%);
+.team-builder {
+    border-top: 2px solid hsl(0, 78%, 62%);
 }
 
-
-
-
-
-
-
-
-
-
-
-.suvs {
-    background-color: hsl(184, 100%, 22%);
-    padding: 40px;
-    width: 273px;
+.karma {
+    border-top: 2px solid hsl(34, 97%, 64%);
+    margin-top: 20px;
 }
 
-.suvs button {
-    color: hsl(184, 100%, 22%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.luxury {
-    width: 277px;
-    background-color: hsl(179, 100%, 13%);
-    padding: 40px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.luxury button {
-    color: hsl(179, 100%, 13%);
-}
-
-.sedans button:hover,
-.suvs button:hover,
-.luxury button:hover {
-    color: hsl(0, 0%, 95%);
-    background-color: transparent;
+.calculator {
+    border-top: 2px solid hsl(212, 86%, 64%);
+    margin-left: 20px;
 }
 
 
@@ -150,57 +166,94 @@ section {
 
 
 
-@media (max-width: 700px) {
-    section {
-        padding: 10px 0;
+
+
+
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.attribution {
+    font-size: 0.5rem;
+    background-color: #393939;
+    color: white;
+    padding: 10px;
+    margin-top: 23px;
+}
+
+.attribution a {
+    font-size: 0.5rem;
+    text-decoration: none;
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1412px) {
+    .section-p {
+        font-size: 20px;
     }
 
-    .container {
+    .box {
+        max-width: 445px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1003px) {
+    section {
+        margin-bottom: 50px;
+    }
+
+    section .container {
         flex-direction: column;
     }
 
-    p {
-        font-size: 13px;
+    .supervisor {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    
+
+    .karma {
+        margin: 30px 0;
     }
 
-    .sedans {
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 5px;
-        padding-top: 30px;
-
-    }
-
-    .sedans button {
-        margin-top: 20px;
-    }
-
-
-
-
-
-    .suvs {
-        width: 277px;
-        padding-top: 30px;
-    }
-
-    .suvs button {
-        margin-top: 20px;
-    }
-
-
-
-
-
-    .luxury {
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 5px;
-    }
-
-    .luxury button {
-        margin-top: 20px;
+    .calculator {
+        margin: 0;
     }
 }
-
-
-
-
