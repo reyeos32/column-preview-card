@@ -1,198 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-header {
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-}
-
-
-header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-header h2 {
-    color: hsl(212, 6%, 44%);
-    font-weight: 200;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-header h1 {
-    color: hsl(234, 12%, 34%);
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-header p {
-    width: 60%;
-    margin-top: 10px;
-    font-size: 0.6rem;
-    font-weight: 500;
-    text-align: center;
-    color: hsl(212, 6%, 44%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-section {
-    margin-top: 80px;
-}
-
-section .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 
 
 .box {
+    padding: 2.1875rem 1.875rem 1.5625rem 1.875rem;
+    border-radius: 0.9375rem;
+}
+
+
+
+
+.img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+
+.box-info {
     display: flex;
-    flex-direction: column;
-    box-shadow: 0px 7px 27px -20px black;
-    padding: 20px;
-    /* padding-right: 0; */
-    /* position: relative; */
-    max-width: 320px;
-    border-radius: 5px;
+    align-items: center;
 }
 
-.section-h {
-    color: hsl(234, 12%, 34%);
-    font-size: 0.9rem;
-    font-weight: 600;
-    width: fit-content;
+.box-info p {
+    margin-left: 1.25rem;
 }
 
-.section-p {
-    font-size: 14px;
-    color: hsl(212, 6%, 44%);
-    margin-top: 5px;
-    padding-right: 20px;
+.box h1 {
+    font-size: 1.5625rem;
+    font-weight: 500;
+    margin: 1.25rem 0;
 }
 
-.section-img {
-    /* position: absolute; */
-    margin-top: 25px;
-    /* margin-left: 160px; */
-    /* right: 25px; */
-    /* bottom: 25px; */
-    width: 50px;
-    align-self: flex-end;
-}
-
-
-
-.supervisor { 
-    border-top: 2px solid hsl(180, 62%, 55%);
-    /* height: 200px; */
-    margin-right: 20px;
-}
-
-.middle {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-}
-
-.team-builder {
-    border-top: 2px solid hsl(0, 78%, 62%);
-}
-
-.karma {
-    border-top: 2px solid hsl(34, 97%, 64%);
-    margin-top: 20px;
-}
-
-.calculator {
-    border-top: 2px solid hsl(212, 86%, 64%);
-    margin-left: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
-.attribution {
-    font-size: 0.5rem;
-    background-color: #393939;
+.box p,
+.box h1 {
     color: white;
-    padding: 10px;
-    margin-top: 23px;
 }
 
-.attribution a {
-    font-size: 0.5rem;
-    text-decoration: none;
-    color: orange;
+.box p {
+    font-size: 1.0625rem;
+}
+
+.jean p,
+.kira p,
+.jean h1,
+.kira h1 {
+    color: black;
+}
+
+.name p:nth-child(2) {
+    font-size: 0.875rem;
+    margin-top: 0.0625rem;
+}
+.name p:nth-child(1) {
+    font-size: 0.875rem;
+    letter-spacing: 0.0625rem;
+}
+
+.subject {
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+.container section {
+    min-height: 100vh;
+    padding: 1.875rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "daniel daniel jon kira"
+    "jean pat pat kira";
+    gap: 2.5rem;
+}
+
+
+
+
+
+
+
+
+.daniel {
+    grid-area: daniel;
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+}
+
+.daniel-subject {
+    color: hsl(0, 0%, 81%) !important;
+}
+
+/* .daniel-subject::before { */
+    content: ' ‛‛ ';
+    position: absolute;
+    right: 0;
+    top: -10;
+    z-index: 999;
+    color: rgb(255, 255, 255);
+    font-size: 163px;
+    /* transform: rotate(180deg); */
+    border: 2px solid red;
+}
+
+.daniel-info img {
+    border: 2px solid hsl(264, 82%, 80%) !important;
+    object-position: 10px 10px !important;
+}
+
+
+
+
+.jon-name p:nth-child(2),
+.daniel-name p:nth-child(2) {
+    color: hsl(0, 0%, 81%);
+}
+
+
+
+
+
+
+.jon {
+    border: 2px solid green;
+    grid-area: jon;
+    background-color: hsl(224, 10%, 45%);
+}
+
+.jon-subject {
+    color: hsl(0, 0%, 81%) !important;
 }
 
 
@@ -203,14 +157,41 @@ footer {
 
 
 
-@media (min-width: 1412px) {
-    .section-p {
-        font-size: 20px;
-    }
 
-    .box {
-        max-width: 445px;
-    }
+
+
+.jean {
+    border: 2px solid yellow;
+    grid-area: jean;
+}
+
+
+
+
+
+
+
+
+
+
+.pat {
+    border: 2px solid blue;
+    grid-area: pat;
+    background-color: hsl(219, 29%, 14%);
+}
+
+
+
+
+
+
+
+
+
+
+.kira {
+    border: 2px solid indigo;
+    grid-area: kira;
 }
 
 
@@ -230,30 +211,38 @@ footer {
 
 
 
+@media (max-width: 1356px) {
+   
+}
 
 
 
 
-@media (max-width: 1003px) {
-    section {
-        margin-bottom: 50px;
+
+
+
+
+@media (max-width: 1356px) {
+    .container section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "daniel daniel jon"
+        "jean pat pat"
+        "kira kira kira";
     }
+}
 
-    section .container {
-        flex-direction: column;
-    }
-
-    .supervisor {
-        margin: 0;
-        margin-bottom: 30px;
-    }
-    
-
-    .karma {
-        margin: 30px 0;
-    }
-
-    .calculator {
-        margin: 0;
+@media (max-width: 800px) {
+    .container section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "daniel"
+        "jon"
+        "jean"
+        "pat"
+        "kira";
     }
 }
