@@ -1,97 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Barlow Semi Condensed", sans-serif;
+    background-color: hsl(0, 0%, 95%);
 }
 
-
-
-.box {
-    padding: 2.1875rem 1.875rem 1.5625rem 1.875rem;
-    border-radius: 0.9375rem;
-    box-shadow: -37px 58px 98px -77px black;
-}
-
-
-
-
-.img {
+.sedans img, .suvs img, .luxury img {
     width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid red;
-    transform: scale(1.2);
+}
+
+.sedans button, .suvs button, .luxury button {
+    width: 130px;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 70px;
+    margin-top: 70px;
+    padding: 10px 25px;
+}
+
+h2 {
+    font-family: "Big Shoulders";
+    color: hsl(0, 0%, 95%);
+    font-weight: 400;
+    font-size: 27px;
+    margin: 20px 0;
+
+}
+
+p, button {
+    font-family: "Lexend Deca";
+}
+
+button {
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 22px;
+    font-size: 14px;
 }
 
 
-.box-info {
+
+
+section {
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.box-info p {
-    margin-left: 1.25rem;
-}
-
-.box h1 {
-    font-size: 1.5625rem;
-    font-weight: 500;
-    margin: 1.25rem 0;
-}
-
-.box p,
-.box h1 {
-    color: white;
-}
-
-.box p {
-    font-size: 1.0625rem;
-}
-
-.jean p,
-.kira p,
-.jean h1,
-.kira h1 {
-    color: black;
-}
-
-.name p:nth-child(2) {
-    font-size: 0.875rem;
-    margin-top: 0.0625rem;
-}
-.name p:nth-child(1) {
-    font-size: 0.875rem;
-    letter-spacing: 0.0625rem;
-}
-
-.subject {
-    line-height: 25px;
-}
-
-
-
-
-
-
-
-
-.container section {
     min-height: 100vh;
-    padding: 1.875rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "daniel daniel jon kira"
-    "jean pat pat kira";
-    gap: 2.5rem;
 }
 
 
@@ -100,30 +63,10 @@ body {
 
 
 
-
-.daniel {
-    grid-area: daniel;
-    background-color: hsl(263, 55%, 52%);
-    position: relative;
-}
-
-.daniel-subject {
-    color: hsl(0, 0%, 81%) !important;
-}
-
-
-
-.daniel-info img {
-    border: 2px solid hsl(264, 82%, 80%) !important;
-    object-position: 1px 0px;
-}
-
-
-
-
-.jon-name p:nth-child(2),
-.daniel-name p:nth-child(2) {
-    color: hsl(0, 0%, 81%);
+.container {
+    display: flex;
+    height: 100%;
+    max-width: 100%;
 }
 
 
@@ -131,19 +74,21 @@ body {
 
 
 
-.jon {
-    grid-area: jon;
-    background-color: hsl(224, 10%, 45%);
+
+.sedans {
+    width: 277px;
+    background-color: hsl(31, 77%, 52%);
+    padding: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-.jon-subject {
-    color: hsl(0, 0%, 81%) !important;
+.sedans img {
+    width: 40px;
 }
 
-.jon-info img {
-    object-position: 0 1px;
-    transform: scale(1.2);
-    border: 1px solid hsl(0, 0%, 81%);
+.sedans button {
+    color: hsl(31, 77%, 52%);
 }
 
 
@@ -156,34 +101,14 @@ body {
 
 
 
-
-.jean {
-    grid-area: jean;
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 40px;
+    width: 273px;
 }
 
-.jean-info img {
-    object-position: 0 1px;
-    transform: scale(1.3);
-    border: none;
-}
-
-
-
-
-
-
-
-
-
-
-.pat {
-    grid-area: pat;
-    background-color: hsl(219, 29%, 14%);
-}
-
-.pat-info img {
-    object-position: 0 1px;
-    border: 2px solid hsl(263, 55%, 52%);
+.suvs button {
+    color: hsl(184, 100%, 22%);
 }
 
 
@@ -197,15 +122,23 @@ body {
 
 
 
-
-
-.kira {
-    grid-area: kira;
+.luxury {
+    width: 277px;
+    background-color: hsl(179, 100%, 13%);
+    padding: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-.kira-info img {
-    border-radius: 0;
-    border: none;
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+.sedans button:hover,
+.suvs button:hover,
+.luxury button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
 }
 
 
@@ -217,42 +150,57 @@ body {
 
 
 
+@media (max-width: 700px) {
+    section {
+        padding: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .sedans {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+        padding-top: 30px;
+
+    }
+
+    .sedans button {
+        margin-top: 20px;
+    }
 
 
 
 
 
+    .suvs {
+        width: 277px;
+        padding-top: 30px;
+    }
+
+    .suvs button {
+        margin-top: 20px;
+    }
 
 
 
 
 
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
 
-
-
-
-
-@media (max-width: 1172px) {
-    .container section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: 
-        "daniel daniel jon"
-        "jean pat pat"
-        "kira kira kira";
+    .luxury button {
+        margin-top: 20px;
     }
 }
 
-@media (max-width: 1045px) {
-    .container section {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: 
-        "daniel"
-        "jon"
-        "jean"
-        "pat"
-        "kira";
-    }
-}
+
+
+
